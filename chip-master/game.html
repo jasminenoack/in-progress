@@ -1,0 +1,324 @@
+
+<style>
+  ul, li, body, h1 {
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  font: inherit;
+  background: transparent;
+  border: 0;
+  }
+
+  ul {
+  list-style: none;
+  }
+
+  .group:after {
+  display: block;
+  content: "";
+  clear: both;
+  }
+
+/*tiles*/
+  ul {
+    border: 1px solid black;
+    width: 480px;
+    margin: 20px auto;
+  }
+
+  .board li {
+    height: 32px;
+    width: 32px;
+    border: 0;
+    float: left;
+    background-image: url(tileset.gif);
+  }
+
+  .clear {
+  }
+
+  .wall {
+    background-position: 0 -32
+  }
+
+  .question-mark {
+    background-position: -64 32
+  }
+
+  .portal {
+    background-position: -96 -352
+  }
+
+  .chip-lock {
+    background-position: -64 -64
+  }
+
+  .green-lock {
+    background-position: -32 -256;
+  }
+
+  .red-lock {
+    background-position: -32 -224;
+  }
+
+  .yellow-lock {
+    background-position: -32 -288;
+  }
+
+  .blue-lock {
+    background-position: -32 -192;
+  }
+
+  .chip {
+    background-position: 0 -64;
+  }
+
+  .blue-key {
+    background-position: -192 -128;
+  }
+
+  .yellow-key {
+    background-position: -192 -224;
+  }
+
+  .red-key {
+    background-position: -192 -160;
+  }
+
+  .green-key {
+    background-position: -192 -192;
+  }
+
+  .start {
+    background-position: -192 64;
+  }
+</style>
+
+
+<ul class = "board group">
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="portal"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="green-lock"></li>
+  <li class="wall"></li>
+  <li class="chip-lock"></li>
+  <li class="wall"></li>
+  <li class="green-lock"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="yellow-key"></li>
+  <li class="clear"></li>
+  <li class="blue-lock"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="red-lock"></li>
+  <li class="clear"></li>
+  <li class="yellow-key"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="blue-key"></li>
+  <li class="clear"></li>
+  <li class="question-mark"></li>
+  <li class="clear"></li>
+  <li class="red-key"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="start"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="blue-key"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="red-key"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="red-lock"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="blue-lock"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="yellow-lock"></li>
+  <li class="wall"></li>
+  <li class="yellow-lock"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="chip"></li>
+  <li class="wall"></li>
+  <li class="chip"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="green-key"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="wall"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+  <li class="clear"></li>
+
+</ul>
